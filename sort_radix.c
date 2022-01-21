@@ -6,7 +6,7 @@
 /*   By: yel-mrab <yel-mrab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 13:02:53 by yel-mrab          #+#    #+#             */
-/*   Updated: 2022/01/21 15:41:19 by yel-mrab         ###   ########.fr       */
+/*   Updated: 2022/01/21 21:04:28 by yel-mrab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,8 +65,6 @@ void	ft_finishing(t_twoatone *two, int len, int index)
 
 void	sort_radix(t_twoatone *two)
 {
-	int	index;
-	int	len;
 	int	i;
 
 	i = 0;
