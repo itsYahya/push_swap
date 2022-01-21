@@ -6,7 +6,7 @@
 /*   By: yel-mrab <yel-mrab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 14:03:59 by yel-mrab          #+#    #+#             */
-/*   Updated: 2022/01/21 15:45:03 by yel-mrab         ###   ########.fr       */
+/*   Updated: 2022/01/21 20:51:59 by yel-mrab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ typedef struct s_data
 {
 	int	size;
 	int	lenght;
-} t_data;
+}	t_data;
 
 typedef struct s_twoatone
 {
@@ -29,16 +29,14 @@ typedef struct s_twoatone
 	t_data	*data_a;
 	int		*stack_b;
 	t_data	*data_b;
-} t_twoatone;
-
+}	t_twoatone;
 
 typedef struct s_var
 {
 	int	number;
 	int	index;
 	int	ko;
-} t_var;
-
+}	t_var;
 
 t_var	ft_atoi(char *num);
 void	swap_stack(int *stack, t_data data);
