@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yel-mrab <yel-mrab@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yahya <yahya@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 14:03:59 by yel-mrab          #+#    #+#             */
-/*   Updated: 2022/01/21 20:51:59 by yel-mrab         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:11:23 by yahya            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ typedef struct s_var
 	int	number;
 	int	index;
 	int	ko;
+	int	go_up;
 }	t_var;
 
 t_var	ft_atoi(char *num);
@@ -50,5 +51,9 @@ void	sort_radix(t_twoatone *two);
 void	ft_filter_0(t_twoatone *two, int index, int len, int i);
 void	ft_filter_1(t_twoatone *two, int len, int i);
 void	ft_finishing(t_twoatone *two, int len, int index);
+void	sort_10(t_twoatone *two);
+void	ft_sort_3(t_twoatone *two);
+void	ft_bringtop(t_twoatone *two, t_var var);
+t_var	ft_find_one(int *stack, t_data data);
 
 #endif

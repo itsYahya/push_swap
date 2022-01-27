@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yel-mrab <yel-mrab@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yahya <yahya@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/08 14:03:33 by yel-mrab          #+#    #+#             */
-/*   Updated: 2022/01/21 20:34:34 by yel-mrab         ###   ########.fr       */
+/*   Updated: 2022/01/24 13:44:40 by yahya            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+#include <stdio.h>
 
 t_var	ft_atoi(char *number)
 {
@@ -102,7 +103,12 @@ int	main(int argc, char **argv)
 		two_.data_b = (t_data *)malloc(sizeof(t_data));
 		ft_init(&two_, argv);
 		if (!ft_sorted(two_.stack_a, *two_.data_a))
-			sort_radix(&two_);
+		{
+			if (two_.data_a->lenght <= 10)
+				sort_10(&two_);
+			else
+				sort_radix(&two_);
+		}
 		ft_free(&two_, 0);
 	}
 	return (0);
